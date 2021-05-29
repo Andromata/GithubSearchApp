@@ -1,7 +1,7 @@
 const { Router } = require("express");
 const router = Router();
-const {getUsers} = require('../controllers/users')
+const {getData, cache} = require('../controllers/data')
 
-router.get("/", getUsers);
+router.post("/",cache, getData);
 
 module.exports = router;

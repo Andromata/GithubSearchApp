@@ -1,0 +1,51 @@
+.container-searchbar {
+  .header {
+    display: flex;
+    align-items: center;
+    .title {
+      display: flex;
+      flex-direction: column;
+      margin-left: 20px;
+      align-items: start;
+      h1 {
+        font-family: "Inter", sans-serif;
+        font-size: 25px;
+        font-weight: 600;
+        color: black;
+      }
+      h2 {
+        font-family: "Inter", sans-serif;
+        margin-left: 1px;
+        font-size: 18px;
+        font-weight: 200;
+      }
+    }
+    .icon {
+      font-size: 50px;
+      max-height: 50px;
+      color: black;
+    }
+  }
+  .searchbar {
+      margin-top: 20px;
+    .inputsearch {
+      height: 50px;
+      border: 1px solid #c4c4c4;
+      border-radius: 3px;
+      width: 400px;
+      padding: 0 10px;
+      font-size: 15px;
+      font-family: "Inter", sans-serif;
+    }
+    .selectsearch {
+      font-family: "Inter", sans-serif;
+      text-transform: uppercase;
+      border: 1px solid #c4c4c4;
+      border-radius: 3px;
+      height: 50px;
+      width: 130px;
+      color: #c4c4c4;
+      margin-left: 20px;
+    }
+  }
+}
