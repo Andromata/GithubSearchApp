@@ -2,7 +2,8 @@ import * as TYPES from '../Types/index'
 
 export const loading = (payload) => {
     return{
-        type: TYPES.LOADING
+        type: TYPES.LOADING,
+        payload:payload
     }
 }
 

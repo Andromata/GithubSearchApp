@@ -2,7 +2,7 @@ import * as TYPES from '../Types/index'
 
 const initialState = {
     loading: false,
-    active: "Users"
+    active: "default"
 }
 
 export const reducerRequest = (state = initialState, action) => {
@@ -13,7 +13,7 @@ export const reducerRequest = (state = initialState, action) => {
                 ...state,
                 loading: action.payload,
             };
-            case TYPES.ACTIVEMODE:{
+        case TYPES.ACTIVEMODE:{
                 return {
                     ...state,
                     active: action.payload

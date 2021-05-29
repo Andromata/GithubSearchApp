@@ -1,7 +1,5 @@
 require("dotenv").config();
-const axios = require('axios')
 const PORT = process.env.PORT
-const REDIS_PORT= process.env.REDIS_PORT
 const express = require('express')
 const morgan = require('morgan');
 const client = require("./redis");

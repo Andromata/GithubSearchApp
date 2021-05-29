@@ -11,10 +11,15 @@ export const reducerRepositories = (state = initialState, action) => {
         case TYPES.SEARCH_REPOSITORIES_RESULTS:
             return {
                 ...state,
-                results: action.payload,
+                results: [...Object.values(action.payload)[0]],
                 backup: {...state.backup, 
                     ...action.payload}
             };
+        case TYPES.CLEAN_REPOSITORIES_RESULTS:
+            return {
+                ...state,
+                results: []
+            }
         default:
             return state;
     }
